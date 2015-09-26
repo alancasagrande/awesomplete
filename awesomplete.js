@@ -60,6 +60,7 @@ var _ = function (input, o) {
 	// Bind events
 
 	$.bind(this.input, {
+		"focus": this.evaluate.bind(this),
 		"input": this.evaluate.bind(this),
 		"blur": this.close.bind(this),
 		"keydown": function(evt) {
